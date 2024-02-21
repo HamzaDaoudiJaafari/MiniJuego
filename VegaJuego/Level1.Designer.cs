@@ -28,8 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Level1));
+            MovEnemigos = new System.Windows.Forms.Timer(components);
             SuspendLayout();
+            // 
+            // MovEnemigos
+            // 
+            MovEnemigos.Enabled = true;
+            MovEnemigos.Tick += timer1_Tick;
             // 
             // Level1
             // 
@@ -48,5 +55,7 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Timer MovEnemigos;
     }
 }

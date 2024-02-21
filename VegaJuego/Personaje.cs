@@ -19,7 +19,7 @@ namespace VegaJuego
             coordX = x;
             coordY = y;
             lienzo = vegaZelda;
-            direccion = "derecha";
+            direccion = "Derecha";
             caja.Location = new System.Drawing.Point(coordX, coordY);
             caja.BackColor = System.Drawing.Color.Transparent;
             caja.Size = new System.Drawing.Size(110, 110);
